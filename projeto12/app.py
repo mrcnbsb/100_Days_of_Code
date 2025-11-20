@@ -35,9 +35,11 @@ def jogar():
             print("Muito baixo.")
         else:
             print("Muito alto.")
-        print("Tente novamente.")
+        
+        if tentativas != 1:
+            print("Tente novamente.")
         tentativas -=1
-
+    
     if acertou:
         print("Você acertou.", end="")
     else:
